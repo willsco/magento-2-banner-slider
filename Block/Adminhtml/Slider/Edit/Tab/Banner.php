@@ -148,7 +148,7 @@ class Banner extends Extended implements TabInterface
             'align' => 'center',
             'index' => 'banner_id'
         ]);
-        $this->addColumn('banner_id', [
+        $this->addColumn('banner_ids', [
             'header' => __('ID'),
             'sortable' => true,
             'index' => 'banner_id',
@@ -196,6 +196,7 @@ class Banner extends Extended implements TabInterface
             'validate_class' => 'validate-number validate-zero-or-greater validate-digits',
             'index' => 'position',
             'editable' => true,
+            'edit_only' => true,
         ]);
 
         return $this;
